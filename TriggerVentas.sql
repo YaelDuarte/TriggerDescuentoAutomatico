@@ -55,7 +55,7 @@ BEGIN
                 mes_ventas_actual = mes_actual
             WHERE idCliente = NEW.idCliente;
 
-            SET NEW.precio_final = NEW.precio * 0.85;
+            SET NEW.precio_final = NEW.precio * 0.15;
         ELSE
             -- Solo actualizamos el conteo si aún no hay descuento
             UPDATE clientes
